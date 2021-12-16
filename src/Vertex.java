@@ -33,4 +33,12 @@ public class Vertex {
     }
     this.e = inflow - outflow;
   }
+
+  public boolean amIOverflowing() {
+    if (isSink || isSource) {
+      return false;
+    } else {
+      return this.e > 0;
+    }
+  }
 }

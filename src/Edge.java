@@ -4,6 +4,7 @@ public class Edge {
   int capacity;
   int curFlow;
 
+
   public Edge(Vertex v1, Vertex v2, int capacity) {
     this.v1 = v1;
     this.v2 = v2;
